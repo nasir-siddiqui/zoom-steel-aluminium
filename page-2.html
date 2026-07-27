@@ -1,0 +1,1560 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zoom Steel Aluminium | Steel Fabrication &amp; Aluminium Works in Mumbai</title>
+<meta name="description" content="Zoom Steel Aluminium designs, manufactures and installs premium steel &amp; aluminium fabrication — main gates, SS railings, aluminium windows, safety grills, toughened glass, pergolas &amp; more. Free site visit &amp; quote.">
+<meta name="keywords" content="Steel Fabrication, Aluminium Works, Steel Fabricator, SS Railings, MS Gates, Aluminium Windows, Toughened Glass, Sliding Doors, Safety Grills, Stair Railings, Pergolas, Fabrication Services Near Me">
+<link rel="canonical" href="https://www.zoomsteelaluminium.com/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="business.business">
+<meta property="og:title" content="Zoom Steel Aluminium | Steel Fabrication & Aluminium Works">
+<meta property="og:description" content="Premium steel & aluminium fabrication for residential, commercial and industrial projects. Custom design, precision workmanship, on-time delivery.">
+<meta property="og:image" content="https://images.unsplash.com/photo-1745448797901-2a4c9d9af1c1?auto=format&fit=crop&w=1200&q=70">
+<meta property="og:url" content="https://www.zoomsteelaluminium.com/">
+<meta property="og:site_name" content="Zoom Steel Aluminium">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Zoom Steel Aluminium | Steel Fabrication & Aluminium Works">
+<meta name="twitter:description" content="Custom steel & aluminium fabrication — gates, railings, windows, safety grills, toughened glass, pergolas &amp; more. Get a free quote today.">
+<meta name="twitter:image" content="https://images.unsplash.com/photo-1745448797901-2a4c9d9af1c1?auto=format&fit=crop&w=1200&q=70">
+
+<link rel="icon" type="image/svg+xml" href="assets/logo-fallback.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Inter:wght@400;500;600&family=Poppins:wght@500;600&display=swap" rel="stylesheet">
+<style>
+
+/* ==========================================================================
+   ZOOM STEEL ALUMINIUM — stylesheet
+   Design language: "Cut Plate" — matte black steel sheet, laser-orange weld
+   seams, brushed-metal texture, angled panel cuts.
+   Fonts: Montserrat (display/headings), Inter (body), Poppins (labels/eyebrows)
+   ========================================================================== */
+
+/* ---------- Design tokens ---------- */
+:root{
+  --black:        #0A0C0E;
+  --panel:        #14171B;
+  --panel-2:      #1B1F24;
+  --line:         #2B3036;
+  --line-soft:    #23272C;
+  --silver:       #9BA2AA;
+  --silver-dim:   #6E747B;
+  --white:        #F5F6F7;
+  --steel-metallic: linear-gradient(135deg,#3a3f45 0%,#787f87 22%,#c9cdd1 38%,#5a6067 55%,#8b929a 72%,#2c3136 100%);
+  --accent:       #FF6A1A;
+  --accent-2:     #FF3D00;
+  --accent-glow:  rgba(255,106,26,.35);
+  --gold:         #E8B44E;
+
+  --font-display: 'Montserrat', sans-serif;
+  --font-body:    'Inter', sans-serif;
+  --font-label:   'Poppins', sans-serif;
+
+  --radius-sm: 8px;
+  --radius-md: 14px;
+  --radius-lg: 22px;
+
+  --container: 1240px;
+  --pad: clamp(20px, 5vw, 64px);
+
+  --ease: cubic-bezier(.19,1,.22,1);
+  --shadow-soft: 0 20px 50px -20px rgba(0,0,0,.6);
+  --shadow-lift: 0 30px 70px -25px rgba(255,106,26,.25);
+}
+
+/* ---------- Reset ---------- */
+*,*::before,*::after{ box-sizing: border-box; margin:0; padding:0; }
+html{ scroll-behavior:smooth; }
+@media (prefers-reduced-motion: reduce){
+  html{ scroll-behavior:auto; }
+  *,*::before,*::after{ animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
+}
+body{
+  background:var(--black);
+  color:var(--silver);
+  font-family:var(--font-body);
+  font-size:16px;
+  line-height:1.65;
+  -webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+  cursor:auto;
+}
+img{ max-width:100%; display:block; }
+a{ color:inherit; text-decoration:none; }
+ul{ list-style:none; }
+button{ font:inherit; background:none; border:none; color:inherit; cursor:pointer; }
+input,textarea,select{ font:inherit; color:inherit; }
+h1,h2,h3,h4{ font-family:var(--font-display); color:var(--white); line-height:1.12; letter-spacing:-.01em; }
+.container{ max-width:var(--container); margin-inline:auto; padding-inline:var(--pad); }
+section{ position:relative; }
+:focus-visible{ outline:2px solid var(--accent); outline-offset:3px; }
+
+/* brushed steel ambient texture */
+body::before{
+  content:"";
+  position:fixed; inset:0; z-index:0; pointer-events:none;
+  background-image:
+    repeating-linear-gradient(115deg, rgba(255,255,255,.012) 0px, rgba(255,255,255,.012) 1px, transparent 1px, transparent 3px);
+  opacity:.6;
+}
+
+/* ---------- Type helpers ---------- */
+.eyebrow{
+  font-family:var(--font-label);
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--accent);
+  display:inline-flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:16px;
+}
+.eyebrow::before{
+  content:"";
+  width:22px; height:2px;
+  background:linear-gradient(90deg,var(--accent),var(--accent-2));
+}
+.section-head{ max-width:640px; margin-bottom:52px; }
+.section-head.center{ margin-inline:auto; text-align:center; }
+.section-head h2{ font-size:clamp(1.8rem,4vw,2.6rem); font-weight:800; }
+.section-head p{ margin-top:14px; font-size:1.02rem; color:var(--silver); }
+
+/* weld-seam underline: draws in on scroll */
+.seam{
+  display:block; width:78px; height:10px; margin-top:10px;
+}
+.seam path{
+  fill:none; stroke:var(--accent); stroke-width:3; stroke-linecap:round;
+  stroke-dasharray:120; stroke-dashoffset:120;
+  transition:stroke-dashoffset 1s var(--ease);
+}
+.in-view .seam path{ stroke-dashoffset:0; }
+
+.btn{
+  display:inline-flex; align-items:center; justify-content:center; gap:10px;
+  font-family:var(--font-label); font-weight:600; font-size:.9rem;
+  letter-spacing:.02em;
+  padding:15px 28px;
+  border-radius:999px;
+  position:relative;
+  overflow:hidden;
+  transition:transform .35s var(--ease), box-shadow .35s var(--ease), background .35s var(--ease);
+  white-space:nowrap;
+}
+.btn svg{ width:17px; height:17px; flex-shrink:0; }
+.btn-primary{
+  background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  color:#fff;
+  box-shadow:0 12px 30px -10px var(--accent-glow);
+}
+.btn-primary:hover{ transform:translateY(-3px); box-shadow:0 18px 40px -12px var(--accent-glow); }
+.btn-ghost{
+  background:rgba(255,255,255,.03);
+  color:var(--white);
+  border:1px solid var(--line);
+  backdrop-filter:blur(6px);
+}
+.btn-ghost:hover{ border-color:var(--accent); background:rgba(255,106,26,.08); transform:translateY(-3px); }
+.btn-block{ width:100%; }
+.btn-sm{ padding:10px 18px; font-size:.78rem; }
+
+/* ripple */
+.btn .ripple{
+  position:absolute; border-radius:50%; background:rgba(255,255,255,.5);
+  transform:scale(0); animation:ripple .6s ease-out forwards; pointer-events:none;
+}
+@keyframes ripple{ to{ transform:scale(3); opacity:0; } }
+
+/* ---------- Scroll progress bar ---------- */
+.progress-bar{
+  position:fixed; top:0; left:0; height:3px; width:0%;
+  background:linear-gradient(90deg,var(--accent),var(--gold));
+  z-index:1000; transition:width .1s linear;
+}
+
+/* ---------- Header ---------- */
+.site-header{
+  position:fixed; top:0; left:0; right:0; z-index:900;
+  padding:18px 0;
+  transition:background .4s var(--ease), padding .4s var(--ease), border-color .4s var(--ease);
+  border-bottom:1px solid transparent;
+}
+.site-header.scrolled{
+  background:rgba(10,12,14,.85);
+  backdrop-filter:blur(14px) saturate(140%);
+  padding:12px 0;
+  border-bottom:1px solid var(--line-soft);
+}
+.site-header .container{ display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.brand{ display:flex; align-items:center; gap:12px; }
+.brand img{ width:46px; height:46px; border-radius:10px; object-fit:cover; border:1px solid var(--line); }
+.brand-text{ display:flex; flex-direction:column; line-height:1.15; }
+.brand-text strong{ font-family:var(--font-display); font-weight:800; color:var(--white); font-size:1.02rem; letter-spacing:.01em; }
+.brand-text span{ font-family:var(--font-label); font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); }
+
+.main-nav{ display:flex; align-items:center; gap:30px; }
+.main-nav a{
+  font-family:var(--font-label); font-size:.84rem; font-weight:500; color:var(--silver);
+  position:relative; padding:6px 0; transition:color .3s;
+}
+.main-nav a::after{
+  content:""; position:absolute; left:0; bottom:0; width:0; height:2px;
+  background:var(--accent); transition:width .3s var(--ease);
+}
+.main-nav a:hover, .main-nav a.active{ color:var(--white); }
+.main-nav a:hover::after, .main-nav a.active::after{ width:100%; }
+
+.header-actions{ display:flex; align-items:center; gap:10px; }
+.icon-btn{
+  width:42px; height:42px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  border:1px solid var(--line); color:var(--white); transition:.3s var(--ease);
+}
+.icon-btn:hover{ border-color:var(--accent); color:var(--accent); transform:translateY(-2px); }
+.icon-btn svg{ width:18px; height:18px; }
+
+.nav-toggle{ display:none; width:42px; height:42px; border:1px solid var(--line); border-radius:10px; align-items:center; justify-content:center; flex-direction:column; gap:5px; }
+.nav-toggle span{ width:20px; height:2px; background:var(--white); transition:.3s; }
+.nav-toggle.active span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+.nav-toggle.active span:nth-child(2){ opacity:0; }
+.nav-toggle.active span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+
+/* ---------- Hero ---------- */
+.hero{
+  min-height:100svh;
+  display:flex; align-items:center;
+  padding-top:120px; padding-bottom:80px;
+  position:relative;
+  isolation:isolate;
+  overflow:hidden;
+}
+.hero-bg{ position:absolute; inset:0; z-index:-2; }
+.hero-bg img{ width:100%; height:100%; object-fit:cover; filter:grayscale(35%) contrast(1.1) brightness(.55); }
+.hero-bg::after{
+  content:""; position:absolute; inset:0;
+  background:
+    linear-gradient(180deg, rgba(10,12,14,.55) 0%, rgba(10,12,14,.75) 45%, var(--black) 96%),
+    linear-gradient(90deg, var(--black) 0%, rgba(10,12,14,.55) 40%, rgba(10,12,14,.2) 100%);
+}
+.spark-canvas{ position:absolute; inset:0; z-index:-1; pointer-events:none; }
+
+.hero .container{ display:grid; grid-template-columns:1.15fr .85fr; gap:50px; align-items:end; }
+.hero-content h1{
+  font-size:clamp(2.3rem, 5.4vw, 4.1rem);
+  font-weight:800;
+  color:var(--white);
+}
+.hero-content h1 em{
+  font-style:normal;
+  background:linear-gradient(100deg,var(--accent),var(--gold));
+  -webkit-background-clip:text; background-clip:text; color:transparent;
+}
+.hero-content .sub{ margin-top:22px; font-size:1.08rem; color:var(--silver); max-width:520px; }
+.hero-cta{ display:flex; flex-wrap:wrap; gap:16px; margin-top:36px; }
+.hero-badges{ display:flex; gap:28px; margin-top:52px; flex-wrap:wrap; }
+.hero-badges div strong{ display:block; font-family:var(--font-display); font-size:1.6rem; color:var(--white); font-weight:800; }
+.hero-badges div span{ font-family:var(--font-label); font-size:.7rem; letter-spacing:.08em; text-transform:uppercase; color:var(--silver-dim); }
+
+.hero-panel{
+  background:rgba(20,23,27,.55);
+  border:1px solid var(--line);
+  border-radius:var(--radius-lg);
+  padding:28px;
+  backdrop-filter:blur(16px);
+  box-shadow:var(--shadow-soft);
+}
+.hero-panel h3{ font-size:1.1rem; margin-bottom:6px; }
+.hero-panel p{ font-size:.88rem; margin-bottom:20px; }
+.hero-panel-list{ display:flex; flex-direction:column; gap:14px; margin-bottom:22px; }
+.hero-panel-list li{ display:flex; align-items:center; gap:12px; font-size:.88rem; color:var(--silver); }
+.hero-panel-list svg{ width:18px; height:18px; color:var(--accent); flex-shrink:0; }
+
+.scroll-cue{
+  position:absolute; bottom:26px; left:50%; transform:translateX(-50%);
+  display:flex; flex-direction:column; align-items:center; gap:8px;
+  font-family:var(--font-label); font-size:.65rem; letter-spacing:.2em; text-transform:uppercase; color:var(--silver-dim);
+}
+.scroll-cue .line{ width:1px; height:34px; background:linear-gradient(var(--accent),transparent); animation:scrollcue 1.8s infinite; }
+@keyframes scrollcue{ 0%{ transform:scaleY(0); transform-origin:top;} 50%{ transform:scaleY(1); transform-origin:top;} 51%{transform-origin:bottom;} 100%{ transform:scaleY(0); transform-origin:bottom;} }
+
+/* ---------- floating buttons ---------- */
+.floating-actions{ position:fixed; right:22px; bottom:22px; z-index:850; display:flex; flex-direction:column; gap:12px; align-items:flex-end; }
+.fab{
+  width:56px; height:56px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  box-shadow:0 14px 30px -8px rgba(0,0,0,.6); transition:transform .3s var(--ease);
+  position:relative;
+}
+.fab svg{ width:24px; height:24px; }
+.fab:hover{ transform:scale(1.08) translateY(-2px); }
+.fab-call{ background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#fff; }
+.fab-whatsapp{ background:#25D366; color:#0A0C0E; }
+.fab-top{ width:44px; height:44px; background:var(--panel-2); border:1px solid var(--line); color:var(--white); opacity:0; pointer-events:none; transform:translateY(10px); }
+.fab-top.show{ opacity:1; pointer-events:auto; transform:translateY(0); }
+.fab::before{
+  content:""; position:absolute; inset:-6px; border-radius:50%; border:1.5px solid currentColor; opacity:.4;
+  animation:pulse-ring 2.2s infinite;
+}
+.fab-top::before{ display:none; }
+@keyframes pulse-ring{ 0%{ transform:scale(.85); opacity:.5;} 70%{ transform:scale(1.3); opacity:0;} 100%{opacity:0;} }
+
+/* ---------- Sections shared ---------- */
+.section{ padding:110px 0; }
+.section-tight{ padding:70px 0; }
+.bg-panel{ background:var(--panel); }
+.edge-cut-top{ clip-path:polygon(0 26px,100% 0,100% 100%,0 100%); margin-top:-26px; padding-top:calc(110px + 26px); }
+.edge-cut-bottom{ clip-path:polygon(0 0,100% 0,100% calc(100% - 26px),0 100%); padding-bottom:calc(110px + 26px); margin-bottom:-26px; }
+
+/* reveal on scroll */
+.reveal{ opacity:0; transform:translateY(34px); transition:opacity .8s var(--ease), transform .8s var(--ease); }
+.reveal.in-view{ opacity:1; transform:translateY(0); }
+.stagger > *{ transition-delay:calc(var(--i, 0) * 90ms); }
+
+/* ---------- Intro / about ---------- */
+.about-grid{ display:grid; grid-template-columns:.9fr 1.1fr; gap:60px; align-items:center; }
+.about-media{ position:relative; border-radius:var(--radius-lg); overflow:hidden; border:1px solid var(--line); }
+.about-media img{ width:100%; height:460px; object-fit:cover; filter:grayscale(15%) contrast(1.05); }
+.about-media::after{ content:""; position:absolute; inset:0; background:linear-gradient(0deg,rgba(10,12,14,.75),transparent 45%); }
+.about-stat-chip{
+  position:absolute; left:24px; bottom:24px; z-index:2;
+  background:rgba(15,17,20,.7); border:1px solid var(--line); backdrop-filter:blur(10px);
+  border-radius:var(--radius-md); padding:16px 20px;
+}
+.about-stat-chip strong{ font-family:var(--font-display); font-size:1.7rem; color:var(--white); display:block; }
+.about-stat-chip span{ font-size:.72rem; color:var(--silver); }
+.about-points{ display:grid; gap:16px; margin-top:26px; }
+.about-points li{ display:flex; gap:14px; align-items:flex-start; font-size:.94rem; }
+.about-points svg{ width:20px; height:20px; color:var(--accent); flex-shrink:0; margin-top:2px; }
+.about-points b{ color:var(--white); }
+
+/* ---------- Services ---------- */
+.grid-3{ display:grid; grid-template-columns:repeat(3,1fr); gap:26px; }
+.service-card{
+  position:relative; background:var(--panel); border:1px solid var(--line); border-radius:var(--radius-lg);
+  padding:32px 26px; overflow:hidden; transition:transform .45s var(--ease), border-color .45s var(--ease), box-shadow .45s var(--ease);
+}
+.service-card::before{
+  content:""; position:absolute; inset:0; opacity:0; transition:opacity .5s;
+  background:linear-gradient(120deg, transparent 30%, rgba(255,255,255,.06) 45%, transparent 60%);
+  background-size:220% 220%; background-position:-40% -40%;
+}
+.service-card:hover{ transform:translateY(-8px); border-color:rgba(255,106,26,.5); box-shadow:var(--shadow-lift); }
+.service-card:hover::before{ opacity:1; animation:sheen 1.2s ease forwards; }
+@keyframes sheen{ from{ background-position:-40% -40%; } to{ background-position:140% 140%; } }
+.service-icon{
+  width:58px; height:58px; border-radius:14px; display:flex; align-items:center; justify-content:center;
+  background:var(--panel-2); border:1px solid var(--line); color:var(--accent); margin-bottom:22px;
+  transition:.4s var(--ease);
+}
+.service-card:hover .service-icon{ background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#fff; border-color:transparent; transform:rotate(-6deg) scale(1.05); }
+.service-icon svg{ width:28px; height:28px; }
+.service-card h3{ font-size:1.12rem; margin-bottom:10px; }
+.service-card p{ font-size:.88rem; }
+.service-more{ display:inline-flex; align-items:center; gap:6px; margin-top:18px; font-family:var(--font-label); font-size:.78rem; font-weight:600; color:var(--white); }
+.service-more svg{ width:14px; height:14px; transition:transform .3s var(--ease); }
+.service-card:hover .service-more svg{ transform:translateX(5px); }
+.services-more-row{ text-align:center; margin-top:44px; }
+
+/* ---------- Gallery ---------- */
+.filter-row{ display:flex; flex-wrap:wrap; gap:10px; justify-content:center; margin-bottom:40px; }
+.filter-btn{
+  padding:9px 20px; border-radius:999px; border:1px solid var(--line); font-family:var(--font-label); font-size:.78rem; color:var(--silver);
+  transition:.3s var(--ease);
+}
+.filter-btn:hover{ color:var(--white); border-color:var(--accent); }
+.filter-btn.active{ background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#fff; border-color:transparent; }
+
+.masonry{ column-count:3; column-gap:20px; }
+.g-item{
+  break-inside:avoid; margin-bottom:20px; border-radius:var(--radius-md); overflow:hidden; position:relative;
+  border:1px solid var(--line); cursor:pointer;
+}
+.g-item .g-visual{ position:relative; overflow:hidden; }
+.g-item svg{ width:100%; height:auto; display:block; transition:transform .6s var(--ease); background:var(--panel); }
+.g-item:hover svg{ transform:scale(1.08); }
+.g-caption{
+  position:absolute; inset:auto 0 0 0; padding:18px; z-index:2;
+  background:linear-gradient(0deg, rgba(8,9,11,.92), transparent);
+  transform:translateY(8px); opacity:.92; transition:.4s var(--ease);
+}
+.g-caption span{ font-family:var(--font-label); font-size:.66rem; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); }
+.g-caption h4{ font-size:1rem; color:var(--white); margin-top:4px; }
+.g-item:hover .g-caption{ transform:translateY(0); opacity:1; }
+.g-zoom{ position:absolute; top:14px; right:14px; width:36px; height:36px; border-radius:50%; background:rgba(10,12,14,.6); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; color:var(--white); opacity:0; transition:.3s; z-index:2; }
+.g-item:hover .g-zoom{ opacity:1; }
+.g-zoom svg{ width:16px; height:16px; }
+
+/* Lightbox */
+.lightbox{ position:fixed; inset:0; z-index:1100; background:rgba(6,7,8,.94); display:flex; align-items:center; justify-content:center; padding:40px; opacity:0; pointer-events:none; transition:.35s; }
+.lightbox.open{ opacity:1; pointer-events:auto; }
+.lightbox-inner{ max-width:720px; width:100%; background:var(--panel); border:1px solid var(--line); border-radius:var(--radius-lg); overflow:hidden; transform:scale(.94); transition:.35s var(--ease); }
+.lightbox.open .lightbox-inner{ transform:scale(1); }
+.lightbox-visual{ padding:30px; background:var(--panel-2); }
+.lightbox-body{ padding:24px 28px 30px; }
+.lightbox-body span{ color:var(--accent); font-family:var(--font-label); font-size:.7rem; letter-spacing:.14em; text-transform:uppercase; }
+.lightbox-body h4{ margin-top:6px; font-size:1.2rem; }
+.lightbox-close{ position:absolute; top:26px; right:max(26px, calc(50% - 360px - 26px)); width:44px; height:44px; border-radius:50%; border:1px solid var(--line); color:#fff; display:flex; align-items:center; justify-content:center; }
+.lightbox-close svg{ width:18px; height:18px; }
+
+/* ---------- Why choose us ---------- */
+.grid-4{ display:grid; grid-template-columns:repeat(4,1fr); gap:22px; }
+.feature-card{
+  padding:26px 22px; border-radius:var(--radius-md); border:1px solid var(--line); background:var(--panel);
+  transition:.4s var(--ease);
+}
+.feature-card:hover{ border-color:rgba(255,106,26,.45); transform:translateY(-6px); }
+.feature-card svg{ width:30px; height:30px; color:var(--accent); margin-bottom:16px; }
+.feature-card h4{ font-size:.98rem; margin-bottom:8px; }
+.feature-card p{ font-size:.82rem; }
+
+/* ---------- Process timeline ---------- */
+.process-track{ position:relative; display:grid; grid-template-columns:repeat(7,1fr); gap:14px; }
+.process-track::before{
+  content:""; position:absolute; top:29px; left:0; right:0; height:2px;
+  background:repeating-linear-gradient(90deg, var(--line) 0 10px, transparent 10px 16px);
+}
+.process-step{ text-align:center; position:relative; }
+.process-num{
+  width:58px; height:58px; margin-inline:auto; border-radius:50%; background:var(--panel); border:2px solid var(--line);
+  display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:800; color:var(--white);
+  position:relative; z-index:2; transition:.4s var(--ease);
+}
+.process-step:hover .process-num{ border-color:var(--accent); background:linear-gradient(135deg,var(--accent),var(--accent-2)); color:#fff; }
+.process-step h4{ font-size:.85rem; margin-top:16px; color:var(--white); font-family:var(--font-body); font-weight:600; }
+.process-step p{ font-size:.76rem; margin-top:6px; }
+
+/* ---------- Products ---------- */
+.product-card{
+  background:var(--panel); border:1px solid var(--line); border-radius:var(--radius-md); padding:24px; text-align:center;
+  transition:.4s var(--ease);
+}
+.product-card:hover{ transform:translateY(-6px); border-color:rgba(255,106,26,.4); }
+.product-card svg{ width:44px; height:44px; color:var(--accent); margin-bottom:14px; }
+.product-card h4{ font-size:.92rem; color:var(--white); font-family:var(--font-body); font-weight:600; }
+.grid-products{ display:grid; grid-template-columns:repeat(4,1fr); gap:20px; }
+
+/* ---------- Stats ---------- */
+.stats-strip{
+  display:grid; grid-template-columns:repeat(5,1fr); gap:20px; text-align:center;
+  border-top:1px solid var(--line); border-bottom:1px solid var(--line); padding:52px 0;
+}
+.stat-num{ font-family:var(--font-display); font-weight:800; font-size:clamp(1.8rem,3.4vw,2.7rem); color:var(--white); }
+.stat-num span{ background:linear-gradient(100deg,var(--accent),var(--gold)); -webkit-background-clip:text; background-clip:text; color:transparent; }
+.stat-label{ font-family:var(--font-label); font-size:.72rem; letter-spacing:.1em; text-transform:uppercase; color:var(--silver-dim); margin-top:8px; }
+
+/* ---------- Testimonials ---------- */
+.testi-wrap{ position:relative; max-width:760px; margin-inline:auto; }
+.testi-track{ overflow:hidden; }
+.testi-slides{ display:flex; transition:transform .6s var(--ease); }
+.testi-slide{ flex:0 0 100%; padding:6px; }
+.testi-card{
+  background:var(--panel); border:1px solid var(--line); border-radius:var(--radius-lg); padding:40px; text-align:center;
+}
+.testi-stars{ display:flex; gap:4px; justify-content:center; margin-bottom:20px; color:var(--gold); }
+.testi-stars svg{ width:18px; height:18px; }
+.testi-card p{ font-size:1.08rem; color:var(--white); font-weight:400; line-height:1.7; }
+.testi-person{ display:flex; align-items:center; justify-content:center; gap:12px; margin-top:26px; }
+.testi-avatar{
+  width:44px; height:44px; border-radius:50%; background:linear-gradient(135deg,var(--accent),var(--accent-2));
+  display:flex; align-items:center; justify-content:center; font-family:var(--font-display); font-weight:700; color:#fff; font-size:.9rem;
+}
+.testi-person strong{ display:block; color:var(--white); font-size:.88rem; }
+.testi-person span{ font-size:.74rem; color:var(--silver-dim); }
+.testi-dots{ display:flex; justify-content:center; gap:8px; margin-top:28px; }
+.testi-dots button{ width:9px; height:9px; border-radius:50%; background:var(--line); transition:.3s; }
+.testi-dots button.active{ background:var(--accent); width:24px; border-radius:5px; }
+.testi-arrow{ position:absolute; top:50%; transform:translateY(-50%); width:46px; height:46px; border-radius:50%; border:1px solid var(--line); display:flex; align-items:center; justify-content:center; color:#fff; background:var(--black); transition:.3s; }
+.testi-arrow:hover{ border-color:var(--accent); color:var(--accent); }
+.testi-arrow.prev{ left:-70px; } .testi-arrow.next{ right:-70px; }
+.testi-arrow svg{ width:18px; height:18px; }
+@media (max-width:900px){ .testi-arrow{ display:none; } }
+
+/* ---------- FAQ ---------- */
+.faq-list{ max-width:820px; margin-inline:auto; display:flex; flex-direction:column; gap:14px; }
+.faq-item{ border:1px solid var(--line); border-radius:var(--radius-md); background:var(--panel); overflow:hidden; }
+.faq-q{ width:100%; display:flex; align-items:center; justify-content:space-between; gap:20px; padding:20px 24px; text-align:left; }
+.faq-q h4{ font-family:var(--font-body); font-weight:600; color:var(--white); font-size:.98rem; }
+.faq-q .plus{ width:26px; height:26px; border-radius:50%; border:1px solid var(--line); flex-shrink:0; position:relative; transition:.3s; }
+.faq-q .plus::before,.faq-q .plus::after{ content:""; position:absolute; background:var(--white); top:50%; left:50%; transform:translate(-50%,-50%); }
+.faq-q .plus::before{ width:10px; height:1.5px; }
+.faq-q .plus::after{ width:1.5px; height:10px; transition:.3s; }
+.faq-item.open .faq-q .plus{ background:var(--accent); border-color:var(--accent); }
+.faq-item.open .faq-q .plus::after{ transform:translate(-50%,-50%) rotate(90deg); opacity:0; }
+.faq-a{ max-height:0; overflow:hidden; transition:max-height .4s var(--ease); }
+.faq-a p{ padding:0 24px 22px; font-size:.9rem; }
+
+/* ---------- CTA ---------- */
+.cta-section{
+  position:relative; border-radius:var(--radius-lg); overflow:hidden; text-align:center; padding:80px 40px;
+  isolation:isolate;
+}
+.cta-section .hero-bg img{ filter:grayscale(50%) brightness(.4) contrast(1.1); }
+.cta-section h2{ font-size:clamp(1.8rem,4vw,2.7rem); max-width:700px; margin-inline:auto; }
+.cta-section p{ margin-top:16px; max-width:520px; margin-inline:auto; }
+.cta-actions{ display:flex; flex-wrap:wrap; gap:16px; justify-content:center; margin-top:34px; }
+
+/* ---------- Contact ---------- */
+.contact-grid{ display:grid; grid-template-columns:.85fr 1.15fr; gap:50px; }
+.contact-info-card{ background:var(--panel); border:1px solid var(--line); border-radius:var(--radius-lg); padding:34px; }
+.contact-row{ display:flex; gap:16px; padding:18px 0; border-bottom:1px solid var(--line-soft); }
+.contact-row:last-child{ border-bottom:none; }
+.contact-row .ic{ width:44px; height:44px; border-radius:12px; background:var(--panel-2); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; color:var(--accent); flex-shrink:0; }
+.contact-row .ic svg{ width:20px; height:20px; }
+.contact-row h5{ color:var(--white); font-size:.92rem; margin-bottom:4px; }
+.contact-row p{ font-size:.86rem; }
+.contact-row a:hover{ color:var(--accent); }
+.hours-table{ margin-top:6px; width:100%; font-size:.84rem; }
+.hours-table tr td{ padding:5px 0; }
+.hours-table td:last-child{ text-align:right; color:var(--white); }
+
+.contact-form{ background:var(--panel); border:1px solid var(--line); border-radius:var(--radius-lg); padding:36px; }
+.form-grid{ display:grid; grid-template-columns:1fr 1fr; gap:18px; }
+.field{ display:flex; flex-direction:column; gap:8px; margin-bottom:18px; }
+.field.full{ grid-column:1/-1; }
+.field label{ font-size:.78rem; color:var(--silver); font-family:var(--font-label); }
+.field input, .field select, .field textarea{
+  background:var(--panel-2); border:1px solid var(--line); border-radius:10px; padding:13px 16px; color:var(--white); font-size:.9rem;
+  transition:.3s;
+}
+.field input:focus, .field select:focus, .field textarea:focus{ border-color:var(--accent); background:#1f2328; }
+.field textarea{ resize:vertical; min-height:110px; }
+.form-note{ font-size:.76rem; color:var(--silver-dim); margin-top:10px; text-align:center; }
+.form-success{ display:none; align-items:center; gap:12px; background:rgba(37,211,102,.08); border:1px solid rgba(37,211,102,.35); color:#8CF0B4; padding:14px 18px; border-radius:10px; font-size:.88rem; margin-bottom:18px; }
+.form-success.show{ display:flex; }
+.map-embed{ margin-top:26px; border-radius:var(--radius-md); overflow:hidden; border:1px solid var(--line); height:220px; position:relative; }
+.map-embed iframe{ width:100%; height:100%; border:0; filter:grayscale(1) invert(.92) contrast(.9); }
+.map-pin{ position:absolute; top:50%; left:50%; transform:translate(-50%,-100%); color:var(--accent); pointer-events:none; }
+.map-pin svg{ width:34px; height:34px; filter:drop-shadow(0 6px 10px rgba(0,0,0,.5)); }
+
+/* ---------- Footer ---------- */
+.site-footer{ background:var(--panel); border-top:1px solid var(--line); padding-top:80px; }
+.footer-grid{ display:grid; grid-template-columns:1.4fr 1fr 1fr 1.2fr; gap:40px; padding-bottom:50px; }
+.footer-brand p{ margin-top:16px; font-size:.86rem; max-width:280px; }
+.footer-social{ display:flex; gap:10px; margin-top:22px; }
+.footer-col h5{ font-family:var(--font-label); font-size:.76rem; letter-spacing:.1em; text-transform:uppercase; color:var(--white); margin-bottom:20px; }
+.footer-col ul{ display:flex; flex-direction:column; gap:12px; }
+.footer-col a{ font-size:.87rem; color:var(--silver); transition:.3s; }
+.footer-col a:hover{ color:var(--accent); padding-left:4px; }
+.footer-bottom{ border-top:1px solid var(--line-soft); padding:24px 0; display:flex; justify-content:space-between; flex-wrap:wrap; gap:14px; font-size:.8rem; color:var(--silver-dim); }
+.footer-bottom a:hover{ color:var(--accent); }
+.footer-credit{ display:flex; gap:6px; }
+.footer-credit a{ color:var(--accent); font-weight:600; }
+.footer-legal{ display:flex; gap:20px; }
+
+/* ---------- Custom cursor (desktop) ---------- */
+.cursor-dot, .cursor-ring{ position:fixed; top:0; left:0; pointer-events:none; z-index:2000; border-radius:50%; transform:translate(-50%,-50%); }
+.cursor-dot{ width:6px; height:6px; background:var(--accent); }
+.cursor-ring{ width:34px; height:34px; border:1px solid rgba(255,106,26,.5); transition:width .25s,height .25s,border-color .25s; }
+.cursor-ring.hover{ width:54px; height:54px; border-color:var(--accent); }
+@media (hover:none), (pointer:coarse){ .cursor-dot,.cursor-ring{ display:none; } }
+
+/* ---------- Skip link ---------- */
+.skip-link{ position:absolute; left:-999px; top:0; background:var(--accent); color:#fff; padding:12px 20px; z-index:2000; border-radius:0 0 8px 0; }
+.skip-link:focus{ left:0; }
+
+/* ---------- Loader ---------- */
+.page-loader{ position:fixed; inset:0; background:var(--black); z-index:3000; display:flex; align-items:center; justify-content:center; transition:opacity .6s, visibility .6s; }
+.page-loader.hidden{ opacity:0; visibility:hidden; }
+.loader-mark{ width:64px; height:64px; position:relative; }
+.loader-mark svg{ width:100%; height:100%; }
+.loader-mark circle{ fill:none; stroke:var(--line); stroke-width:3; }
+.loader-mark .arc{ stroke:var(--accent); stroke-linecap:round; stroke-dasharray:150; stroke-dashoffset:110; transform-origin:center; animation:spin 1s linear infinite; }
+@keyframes spin{ to{ transform:rotate(360deg); } }
+
+/* ---------- Responsive ---------- */
+@media (max-width:1100px){
+  .grid-4{ grid-template-columns:repeat(2,1fr); }
+  .grid-products{ grid-template-columns:repeat(2,1fr); }
+  .process-track{ grid-template-columns:repeat(4,1fr); row-gap:34px; }
+  .process-track::before{ display:none; }
+  .footer-grid{ grid-template-columns:1fr 1fr; }
+}
+@media (max-width:980px){
+  .main-nav{ display:none; }
+  .nav-toggle{ display:flex; }
+  .hero .container{ grid-template-columns:1fr; }
+  .hero-panel{ order:-1; }
+  .about-grid{ grid-template-columns:1fr; }
+  .about-media img{ height:320px; }
+  .grid-3{ grid-template-columns:repeat(2,1fr); }
+  .masonry{ column-count:2; }
+  .contact-grid{ grid-template-columns:1fr; }
+  .stats-strip{ grid-template-columns:repeat(2,1fr); row-gap:30px; }
+}
+@media (max-width:640px){
+  .grid-3, .grid-4, .grid-products{ grid-template-columns:1fr; }
+  .masonry{ column-count:1; }
+  .process-track{ grid-template-columns:repeat(2,1fr); }
+  .form-grid{ grid-template-columns:1fr; }
+  .footer-grid{ grid-template-columns:1fr; }
+  .hero-badges{ gap:20px; }
+  .stats-strip{ grid-template-columns:repeat(2,1fr); }
+  .fab{ width:50px; height:50px; }
+  .fab svg{ width:21px; height:21px; }
+}
+
+/* Mobile nav drawer */
+.mobile-nav{
+  position:fixed; top:0; right:0; height:100%; width:min(320px,86vw); background:var(--panel);
+  border-left:1px solid var(--line); z-index:950; padding:100px 30px 30px;
+  transform:translateX(100%); transition:transform .5s var(--ease);
+  display:flex; flex-direction:column; gap:6px;
+}
+.mobile-nav.open{ transform:translateX(0); }
+.mobile-nav a{ padding:14px 0; border-bottom:1px solid var(--line-soft); font-family:var(--font-label); color:var(--white); font-size:.98rem; }
+.nav-scrim{ position:fixed; inset:0; background:rgba(0,0,0,.6); z-index:940; opacity:0; pointer-events:none; transition:.4s; }
+.nav-scrim.open{ opacity:1; pointer-events:auto; }
+
+</style>
+
+<!-- Schema.org: LocalBusiness -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "HomeAndConstructionBusiness",
+  "name": "Zoom Steel Aluminium",
+  "image": "https://images.unsplash.com/photo-1745448797901-2a4c9d9af1c1",
+  "description": "Zoom Steel Aluminium specializes in high-quality steel and aluminium fabrication for residential, commercial and industrial projects, including main gates, railings, windows, safety grills, toughened glass and pergolas.",
+  "telephone": "+91-75340-99265",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Malad, Mumbai",
+    "addressRegion": "Maharashtra",
+    "addressCountry": "IN"
+  },
+  "areaServed": "Mumbai Metropolitan Region",
+  "sameAs": ["https://www.instagram.com/zooom_steel_aluminium"],
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"],
+    "opens": "09:30",
+    "closes": "19:30"
+  }]
+}
+</script>
+<!-- Schema.org: Services -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Steel Fabrication & Aluminium Works",
+  "provider": { "@type": "HomeAndConstructionBusiness", "name": "Zoom Steel Aluminium" },
+  "areaServed": "Mumbai",
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Fabrication Services",
+    "itemListElement": [
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Steel Fabrication"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Aluminium Windows"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Main Gates"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Balcony Railings"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Stair Railings"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Safety Grills"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Toughened Glass"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Sliding Doors"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Office Glass Partitions"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Pergolas"}},
+      {"@type":"Offer","itemOffered":{"@type":"Service","name":"Car Parking Sheds"}}
+    ]
+  }
+}
+</script>
+<!-- Schema.org: FAQ -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type":"Question","name":"Do you provide custom fabrication?","acceptedAnswer":{"@type":"Answer","text":"Yes. Every gate, railing, window and enclosure is designed and cut to your exact measurements, layout and style preference — nothing is off-the-shelf."}},
+    {"@type":"Question","name":"Do you offer site visits?","acceptedAnswer":{"@type":"Answer","text":"Yes. We carry out a free on-site measurement and consultation before quoting, so the design and pricing are accurate from the start."}},
+    {"@type":"Question","name":"Which areas do you serve?","acceptedAnswer":{"@type":"Answer","text":"We serve homeowners, builders and businesses across the Mumbai Metropolitan Region, with our workshop based in Malad."}},
+    {"@type":"Question","name":"How long does installation take?","acceptedAnswer":{"@type":"Answer","text":"Most residential gates and railings are manufactured and installed within 7-12 days of order confirmation, depending on design complexity."}},
+    {"@type":"Question","name":"What materials do you use?","acceptedAnswer":{"@type":"Answer","text":"We work with mild steel (MS), stainless steel (SS), structural aluminium sections and toughened safety glass, sourced from certified suppliers."}},
+    {"@type":"Question","name":"Do you provide commercial work?","acceptedAnswer":{"@type":"Answer","text":"Yes. We handle office partitions, commercial facades, factory grills and large-scale parking sheds for builders and businesses."}},
+    {"@type":"Question","name":"Is glass included?","acceptedAnswer":{"@type":"Answer","text":"Yes, toughened glass is available for railings, partitions, sliding doors and gate panels as part of the fabrication package."}}
+  ]
+}
+</script>
+<!-- Schema.org: Breadcrumb -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    {"@type":"ListItem","position":1,"name":"Home","item":"https://www.zoomsteelaluminium.com/"}
+  ]
+}
+</script>
+</head>
+<body>
+
+<!-- Loader -->
+<div class="page-loader" id="pageLoader" aria-hidden="true">
+  <div class="loader-mark">
+    <svg viewBox="0 0 64 64">
+      <circle cx="32" cy="32" r="26"></circle>
+      <circle class="arc" cx="32" cy="32" r="26"></circle>
+    </svg>
+  </div>
+</div>
+
+<a href="#main" class="skip-link">Skip to content</a>
+<div class="progress-bar" id="progressBar"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="container">
+    <a href="#home" class="brand" aria-label="Zoom Steel Aluminium home">
+      <img src="/zoom-steel-aluminium-logo.png"
+           onerror="this.onerror=null;this.src='assets/logo-fallback.svg'"
+           alt="Zoom Steel Aluminium logo">
+      <span class="brand-text"><strong>Zoom Steel Aluminium</strong><span>Fabrication &amp; Aluminium Works</span></span>
+    </a>
+
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#home" class="active">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#why-us">Why Us</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <a href="tel:+917534099265" class="icon-btn" aria-label="Call Zoom Steel Aluminium" data-cursor-hover>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5c0 8.3 6.7 15 15 15l3-3.6a1.6 1.6 0 0 0-.6-2.5l-4-1.8a1.6 1.6 0 0 0-1.8.4l-1.3 1.4a12 12 0 0 1-5.7-5.7l1.4-1.3a1.6 1.6 0 0 0 .4-1.8l-1.8-4A1.6 1.6 0 0 0 7.6 2L4 5Z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/zooom_steel_aluminium" target="_blank" rel="noopener" class="icon-btn" aria-label="Zoom Steel Aluminium on Instagram" data-cursor-hover>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+      </a>
+      <a href="#contact" class="btn btn-primary btn-sm" data-cursor-hover>Get Free Quote</a>
+      <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</header>
+
+<div class="nav-scrim" id="navScrim"></div>
+<nav class="mobile-nav" id="mobileNav" aria-label="Mobile">
+  <a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a>
+  <a href="#projects">Projects</a><a href="#why-us">Why Us</a><a href="#process">Process</a>
+  <a href="#testimonials">Testimonials</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
+</nav>
+
+<main id="main">
+
+<!-- ===================== HERO ===================== -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <img src="https://images.unsplash.com/photo-1745448797901-2a4c9d9af1c1?auto=format&fit=crop&w=1800&q=70" alt="Welder fabricating custom steel work with sparks flying, representing Zoom Steel Aluminium's craftsmanship" loading="eager">
+  </div>
+  <canvas class="spark-canvas" id="sparkCanvas" aria-hidden="true"></canvas>
+
+  <div class="container">
+    <div class="hero-content reveal in-view">
+      <span class="eyebrow">Mumbai's Custom Fabrication Studio</span>
+      <h1>Premium <em>Steel Fabrication</em> &amp; Aluminium Works</h1>
+      <p class="sub">Custom steel &amp; aluminium solutions for residential, commercial and industrial projects — designed around your space, welded to last, installed on schedule.</p>
+      <div class="hero-cta">
+        <a href="#contact" class="btn btn-primary" data-cursor-hover>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 4v16m-8-8h16"/></svg>
+          Get Free Quote
+        </a>
+        <a href="tel:+917534099265" class="btn btn-ghost" data-cursor-hover>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M4 5c0 8.3 6.7 15 15 15l3-3.6a1.6 1.6 0 0 0-.6-2.5l-4-1.8a1.6 1.6 0 0 0-1.8.4l-1.3 1.4a12 12 0 0 1-5.7-5.7l1.4-1.3a1.6 1.6 0 0 0 .4-1.8l-1.8-4A1.6 1.6 0 0 0 7.6 2L4 5Z"/></svg>
+          Call Now
+        </a>
+      </div>
+      <div class="hero-badges">
+        <div><strong data-count="10">0</strong><span>Years Experience*</span></div>
+        <div><strong data-count="500">0</strong><span>Projects Done</span></div>
+        <div><strong data-count="100">0</strong><span>% Satisfaction</span></div>
+      </div>
+    </div>
+
+    <aside class="hero-panel reveal in-view" style="transition-delay:.15s">
+      <h3>Request a Site Visit</h3>
+      <p>Our team measures, designs and quotes on the spot — no obligation.</p>
+      <ul class="hero-panel-list">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Free measurement &amp; consultation</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Transparent, itemised quotation</li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>Fast turnaround, on-time install</li>
+      </ul>
+      <a href="#contact" class="btn btn-primary btn-block" data-cursor-hover>Request Site Visit</a>
+    </aside>
+  </div>
+
+  <div class="scroll-cue"><span>Scroll</span><span class="line"></span></div>
+</section>
+
+<!-- ===================== ABOUT / INTRO ===================== -->
+<section class="section bg-panel edge-cut-top edge-cut-bottom" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-media reveal">
+        <img src="https://images.unsplash.com/photo-1749467140668-ad85f3019277?auto=format&fit=crop&w=1200&q=70" alt="Modern steel structure with exposed beams, illustrating Zoom Steel Aluminium's precision fabrication">
+        <div class="about-stat-chip"><strong>10+</strong><span>Years in Fabrication*</span></div>
+      </div>
+      <div class="about-copy reveal" style="transition-delay:.1s">
+        <span class="eyebrow">Who We Are</span>
+        <h2>Fabrication built around precision, not shortcuts</h2>
+        <svg class="seam" viewBox="0 0 78 10"><path d="M2 8 Q20 2 39 8 T76 8"/></svg>
+        <p style="margin-top:20px;">Zoom Steel Aluminium designs, manufactures and installs steel and aluminium work for homes, offices and factories across Mumbai. Every gate, railing and window passes through the same process: measured on site, drawn to scale, cut and welded in our own workshop, then finished and installed by the team that built it.</p>
+        <ul class="about-points">
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Modern fabrication —</b> CNC-cut sections and jig-welded joints for consistent, straight lines.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Skilled in-house team —</b> designers, welders and fitters who work on your project start to finish.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Quality materials —</b> certified MS, SS and aluminium sections, toughened glass only.</span></li>
+          <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg><span><b>Timely completion —</b> a fixed install date, confirmed before work begins.</span></li>
+        </ul>
+        <a href="#contact" class="btn btn-primary" style="margin-top:30px;" data-cursor-hover>Get Free Quote</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== SERVICES ===================== -->
+<section class="section" id="services">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">What We Build</span>
+      <h2>Fabrication services for every space</h2>
+      <svg class="seam" viewBox="0 0 78 10" style="margin-inline:auto;"><path d="M2 8 Q20 2 39 8 T76 8"/></svg>
+      <p>From a single gate to a full building façade — designed to your layout, fabricated in-house, installed by our own crew.</p>
+    </div>
+
+    <div class="grid-3 stagger" id="servicesGrid">
+      <!-- Service cards injected via template below (static for SEO) -->
+    </div>
+
+    <div class="services-more-row reveal">
+      <a href="#contact" class="btn btn-ghost" data-cursor-hover>Don't see what you need? Ask us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== PROJECTS / GALLERY ===================== -->
+<section class="section bg-panel edge-cut-top edge-cut-bottom" id="projects">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Featured Work</span>
+      <h2>A look inside our recent projects</h2>
+      <svg class="seam" viewBox="0 0 78 10" style="margin-inline:auto;"><path d="M2 8 Q20 2 39 8 T76 8"/></svg>
+      <p>Every piece below was measured, fabricated and installed by our team — filter by category to browse.</p>
+    </div>
+
+    <div class="filter-row reveal" id="filterRow">
+      <button class="filter-btn active" data-filter="all">All Work</button>
+      <button class="filter-btn" data-filter="gates">Gates</button>
+      <button class="filter-btn" data-filter="railings">Railings</button>
+      <button class="filter-btn" data-filter="glass">Glass &amp; Doors</button>
+      <button class="filter-btn" data-filter="outdoor">Outdoor &amp; Sheds</button>
+    </div>
+
+    <div class="masonry" id="masonryGrid"><!-- injected --></div>
+  </div>
+</section>
+
+<!-- ===================== WHY CHOOSE US ===================== -->
+<section class="section" id="why-us">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Why Zoom Steel Aluminium</span>
+      <h2>What you get on every project</h2>
+      <svg class="seam" viewBox="0 0 78 10" style="margin-inline:auto;"><path d="M2 8 Q20 2 39 8 T76 8"/></svg>
+    </div>
+    <div class="grid-4 stagger" id="whyGrid"><!-- injected --></div>
+  </div>
+</section>
+
+<!-- ===================== PROCESS ===================== -->
+<section class="section bg-panel edge-cut-top edge-cut-bottom" id="process">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">How We Work</span>
+      <h2>From first call to final inspection</h2>
+      <svg class="seam" viewBox="0 0 78 10" style="margin-inline:auto;"><path d="M2 8 Q20 2 39 8 T76 8"/></svg>
+      <p>Seven steps, one point of contact — you always know what happens next.</p>
+    </div>
+    <div class="process-track stagger" id="processTrack"><!-- injected --></div>
+  </div>
+</section>
+
+<!-- ===================== PRODUCTS SHOWCASE ===================== -->
+<section class="section" id="products">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Product Range</span>
+      <h2>Popular fabrication products</h2>
+      <svg class="seam" viewBox="0 0 78 10" style="margin-inline:auto;"><path d="M2 8 Q20 2 39 8 T76 8"/></svg>
+    </div>
+    <div class="grid-products stagger" id="productsGrid"><!-- injected --></div>
+  </div>
+</section>
+
+<!-- ===================== STATS ===================== -->
+<section class="section-tight" id="stats">
+  <div class="container">
+    <div class="stats-strip">
+      <div><div class="stat-num"><span data-count="500">0</span>+</div><div class="stat-label">Projects Completed</div></div>
+      <div><div class="stat-num"><span data-count="300">0</span>+</div><div class="stat-label">Happy Clients</div></div>
+      <div><div class="stat-num"><span data-count="100">0</span>%</div><div class="stat-label">Customer Satisfaction</div></div>
+      <div><div class="stat-num"><span data-count="10">0</span>+</div><div class="stat-label">Years Experience*</div></div>
+      <div><div class="stat-num"><span data-count="50">0</span>+</div><div class="stat-label">Custom Designs</div></div>
+    </div>
+    <p style="text-align:center;font-size:.72rem;color:var(--silver-dim);margin-top:18px;">*Placeholder figure — update with your actual years of operation.</p>
+  </div>
+</section>
+
+<!-- ===================== TESTIMONIALS ===================== -->
+<section class="section bg-panel edge-cut-top edge-cut-bottom" id="testimonials">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Client Words</span>
+      <h2>What our clients say</h2>
+      <svg class="seam" viewBox="0 0 78 10" style="margin-inline:auto;"><path d="M2 8 Q20 2 39 8 T76 8"/></svg>
+    </div>
+
+    <div class="testi-wrap reveal">
+      <button class="testi-arrow prev" id="testiPrev" aria-label="Previous testimonial"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="testi-arrow next" id="testiNext" aria-label="Next testimonial"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg></button>
+      <div class="testi-track">
+        <div class="testi-slides" id="testiSlides"><!-- injected --></div>
+      </div>
+      <div class="testi-dots" id="testiDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== FAQ ===================== -->
+<section class="section" id="faq">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Questions</span>
+      <h2>Frequently asked questions</h2>
+      <svg class="seam" viewBox="0 0 78 10" style="margin-inline:auto;"><path d="M2 8 Q20 2 39 8 T76 8"/></svg>
+    </div>
+    <div class="faq-list reveal" id="faqList"><!-- injected --></div>
+  </div>
+</section>
+
+<!-- ===================== CTA ===================== -->
+<section class="section">
+  <div class="container">
+    <div class="cta-section reveal">
+      <div class="hero-bg"><img src="https://images.unsplash.com/photo-1745448797901-2a4c9d9af1c1?auto=format&fit=crop&w=1600&q=60" alt="Steel fabrication workshop background"></div>
+      <div style="position:relative;z-index:1;">
+        <span class="eyebrow" style="justify-content:center;">Let's Build It</span>
+        <h2>Ready to Build Your Dream Fabrication Project?</h2>
+        <p>Tell us what you need — we'll visit, measure and quote at no cost.</p>
+        <div class="cta-actions">
+          <a href="tel:+917534099265" class="btn btn-primary" data-cursor-hover>Call Now</a>
+          <a href="#contact" class="btn btn-ghost" data-cursor-hover>Get Free Quote</a>
+          <a href="https://wa.me/917534099265" target="_blank" rel="noopener" class="btn btn-ghost" data-cursor-hover>WhatsApp Us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== CONTACT ===================== -->
+<section class="section" id="contact">
+  <div class="container">
+    <div class="section-head center">
+      <span class="eyebrow">Get In Touch</span>
+      <h2>Tell us about your project</h2>
+      <svg class="seam" viewBox="0 0 78 10" style="margin-inline:auto;"><path d="M2 8 Q20 2 39 8 T76 8"/></svg>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-info-card reveal">
+        <div class="contact-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5c0 8.3 6.7 15 15 15l3-3.6a1.6 1.6 0 0 0-.6-2.5l-4-1.8a1.6 1.6 0 0 0-1.8.4l-1.3 1.4a12 12 0 0 1-5.7-5.7l1.4-1.3a1.6 1.6 0 0 0 .4-1.8l-1.8-4A1.6 1.6 0 0 0 7.6 2L4 5Z"/></svg></div>
+          <div><h5>Call Us</h5><p><a href="tel:+917534099265">+91 75340 99265</a></p></div>
+        </div>
+        <div class="contact-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4 8.6 8.6 0 0 1-4-1L3 20l1.2-5a8.4 8.4 0 0 1 .8-9.6A8.5 8.5 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5Z"/></svg></div>
+          <div><h5>WhatsApp</h5><p><a href="https://wa.me/917534099265" target="_blank" rel="noopener">Chat with our team</a></p></div>
+        </div>
+        <div class="contact-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1"/></svg></div>
+          <div><h5>Instagram</h5><p><a href="https://www.instagram.com/zooom_steel_aluminium" target="_blank" rel="noopener">@zooom_steel_aluminium</a></p></div>
+        </div>
+        <div class="contact-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M12 21s-7-6-7-11.5A7 7 0 0 1 12 2a7 7 0 0 1 7 7.5C19 15 12 21 12 21Z"/><circle cx="12" cy="9.5" r="2.4"/></svg></div>
+          <div><h5>Workshop</h5><p>Malad, Mumbai, Maharashtra</p></div>
+        </div>
+        <div class="contact-row">
+          <div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg></div>
+          <div>
+            <h5>Business Hours</h5>
+            <table class="hours-table">
+              <tr><td>Mon – Sat</td><td>9:30 AM – 7:30 PM</td></tr>
+              <tr><td>Sunday</td><td>By appointment</td></tr>
+            </table>
+          </div>
+        </div>
+
+        <div class="map-embed">
+          <iframe title="Zoom Steel Aluminium service area map" loading="lazy" src="https://www.openstreetmap.org/export/embed.html?bbox=72.82%2C19.16%2C72.90%2C19.22&layer=mapnik" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <div class="map-pin"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 22s7-7.5 7-12.5A7 7 0 0 0 5 9.5C5 14.5 12 22 12 22Zm0-9.8a2.7 2.7 0 1 1 0-5.4 2.7 2.7 0 0 1 0 5.4Z"/></svg></div>
+        </div>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" style="transition-delay:.1s" novalidate>
+        <div class="form-success" id="formSuccess">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 6 9 17l-5-5"/></svg>
+          Thanks — your enquiry has been noted. We'll call you shortly.
+        </div>
+        <div class="form-grid">
+          <div class="field"><label for="fName">Full Name</label><input id="fName" name="name" type="text" placeholder="Your name" required></div>
+          <div class="field"><label for="fPhone">Phone Number</label><input id="fPhone" name="phone" type="tel" placeholder="+91 00000 00000" required></div>
+          <div class="field"><label for="fEmail">Email Address</label><input id="fEmail" name="email" type="email" placeholder="you@email.com"></div>
+          <div class="field">
+            <label for="fService">Service Required</label>
+            <select id="fService" name="service">
+              <option>Steel Fabrication</option><option>Aluminium Windows</option><option>Main Gates</option>
+              <option>Balcony Railings</option><option>Stair Railings</option><option>Safety Grills</option>
+              <option>Toughened Glass</option><option>Sliding Doors</option><option>Office Glass Partitions</option>
+              <option>Pergolas</option><option>Car Parking Sheds</option><option>Other</option>
+            </select>
+          </div>
+          <div class="field full"><label for="fMsg">Your Requirement</label><textarea id="fMsg" name="message" placeholder="Tell us about the space, size and what you'd like fabricated..."></textarea></div>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block" data-cursor-hover>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg>
+          Submit Enquiry
+        </button>
+        <p class="form-note">We usually respond within a few hours during business hours.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="#home" class="brand">
+          <img src="https://instagram.fbom48-1.fna.fbcdn.net/v/t51.82787-19/751703933_18073725896375121_7542298597907879178_n.jpg?efg=eyJ2ZW5jb2RlX3RhZyI6InByb2ZpbGVfcGljLmRqYW5nby4xMDgwLmMyIn0&_nc_ht=instagram.fbom48-1.fna.fbcdn.net&_nc_cat=109&_nc_oc=Q6cZ2gGQpUCG9yoHMTtFjI0UyqgAnWKSZXgeF41zraHlYQHmSEi42fQBxi-iqPWufXCxMQk&_nc_ohc=4PynU6U8aRkQ7kNvwEiY9u9&_nc_gid=0euJ65GIAmRc0GMEKcbjhw&edm=AP4sbd4BAAAA&ccb=7-5&oh=00_AQBpjXslE_iioOjFKIw-oDYzK_eos3rSwE58dThV4tKKjg&oe=6A6CE0AB&_nc_sid=7a9f4b"
+               onerror="this.onerror=null;this.src='assets/logo-fallback.svg'" alt="Zoom Steel Aluminium logo">
+          <span class="brand-text"><strong>Zoom Steel Aluminium</strong><span>Fabrication &amp; Aluminium Works</span></span>
+        </a>
+        <p>Custom steel and aluminium fabrication for homes, offices and factories — designed, welded and installed by one team.</p>
+        <div class="footer-social">
+          <a href="https://www.instagram.com/zooom_steel_aluminium" target="_blank" rel="noopener" class="icon-btn" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.2" cy="6.8" r="1"/></svg></a>
+          <a href="tel:+917534099265" class="icon-btn" aria-label="Call"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M4 5c0 8.3 6.7 15 15 15l3-3.6a1.6 1.6 0 0 0-.6-2.5l-4-1.8a1.6 1.6 0 0 0-1.8.4l-1.3 1.4a12 12 0 0 1-5.7-5.7l1.4-1.3a1.6 1.6 0 0 0 .4-1.8l-1.8-4A1.6 1.6 0 0 0 7.6 2L4 5Z"/></svg></a>
+          <a href="https://wa.me/917534099265" target="_blank" rel="noopener" class="icon-btn" aria-label="WhatsApp"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7"><path d="M21 11.5a8.4 8.4 0 0 1-8.9 8.4 8.6 8.6 0 0 1-4-1L3 20l1.2-5a8.4 8.4 0 0 1 .8-9.6A8.5 8.5 0 0 1 12 3a8.4 8.4 0 0 1 9 8.5Z"/></svg></a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h5>Quick Links</h5>
+        <ul><li><a href="#about">About Us</a></li><li><a href="#services">Services</a></li><li><a href="#projects">Projects</a></li><li><a href="#process">Our Process</a></li><li><a href="#faq">FAQ</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Services</h5>
+        <ul><li><a href="#services">Steel Fabrication</a></li><li><a href="#services">Aluminium Windows</a></li><li><a href="#services">Main Gates</a></li><li><a href="#services">Railings &amp; Grills</a></li><li><a href="#services">Toughened Glass</a></li></ul>
+      </div>
+      <div class="footer-col">
+        <h5>Contact</h5>
+        <ul>
+          <li><a href="tel:+917534099265">+91 75340 99265</a></li>
+          <li><a href="https://www.instagram.com/zooom_steel_aluminium" target="_blank" rel="noopener">@zooom_steel_aluminium</a></li>
+          <li>Malad, Mumbai, Maharashtra</li>
+          <li><a href="#contact">Get a Free Quote →</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Zoom Steel Aluminium. All rights reserved.</span>
+      <div class="footer-legal"><a href="#">Privacy Policy</a><a href="#">Terms &amp; Conditions</a></div>
+      <div class="footer-credit">Designed by <a href="https://digitalnasirsiddiqui.com/" target="_blank" rel="noopener">Digital Nasir Siddiqui</a></div>
+    </div>
+  </div>
+</footer>
+
+<!-- Floating actions -->
+<div class="floating-actions">
+  <button class="fab fab-top" id="fabTop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5m-7 7 7-7 7 7"/></svg></button>
+  <a href="https://wa.me/917534099265" target="_blank" rel="noopener" class="fab fab-whatsapp" aria-label="WhatsApp Us"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15L2 22l5.2-1.4A10 10 0 1 0 12 2Zm0 18.2a8.1 8.1 0 0 1-4.3-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1s-.7.8-.9 1-.3.2-.6.1a6.6 6.6 0 0 1-2-1.2 7.3 7.3 0 0 1-1.4-1.7c-.1-.2 0-.4.1-.5s.2-.3.4-.4a1.6 1.6 0 0 0 .2-.4.4.4 0 0 0 0-.4c-.1-.1-.6-1.4-.8-1.9s-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 2.9 2.9 0 0 0-.9 2.1 5 5 0 0 0 1.1 2.7 11.4 11.4 0 0 0 4.4 3.9c.6.3 1.1.4 1.5.5a3.6 3.6 0 0 0 1.6.1 2.7 2.7 0 0 0 1.8-1.2 2.1 2.1 0 0 0 .1-1.2c-.1-.1-.2-.2-.4-.3Z"/></svg></a>
+  <a href="tel:+917534099265" class="fab fab-call" aria-label="Call Now"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 5c0 8.3 6.7 15 15 15l3-3.6a1.6 1.6 0 0 0-.6-2.5l-4-1.8a1.6 1.6 0 0 0-1.8.4l-1.3 1.4a12 12 0 0 1-5.7-5.7l1.4-1.3a1.6 1.6 0 0 0 .4-1.8l-1.8-4A1.6 1.6 0 0 0 7.6 2L4 5Z"/></svg></a>
+</div>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Close"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 6l12 12M18 6 6 18"/></svg></button>
+  <div class="lightbox-inner">
+    <div class="lightbox-visual" id="lightboxVisual"></div>
+    <div class="lightbox-body">
+      <span id="lightboxCat">Category</span>
+      <h4 id="lightboxTitle">Title</h4>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ==========================================================================
+   ZOOM STEEL ALUMINIUM — main script
+   ========================================================================== */
+(() => {
+  "use strict";
+
+  /* ---------------- Icon library (stroke-based, 24x24) ---------------- */
+  const ICON = {
+    weld: `<path d="M3 20 21 4M13 4h6v6M6 15l3 3"/>`,
+    window: `<rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M12 4v16M4 12h16"/>`,
+    gate: `<path d="M4 20V7l4-3 4 3v13M12 20V7l4-3 4 3v13M4 20h16M6 11h4M6 15h4M14 11h4M14 15h4"/>`,
+    railing: `<path d="M3 19h18M5 19V9m4 10V6m4 13V9m4 10V6m4 13V9M3 9h18"/>`,
+    stairs: `<path d="M3 20h4v-4h4v-4h4V8h4V4M3 20V16"/>`,
+    grill: `<rect x="4" y="4" width="16" height="16" rx="1"/><path d="M4 4l16 16M20 4 4 20M8 4v16M16 4v16M4 8h16M4 16h16"/>`,
+    glass: `<rect x="4" y="4" width="16" height="16" rx="1.5"/><path d="M8 4l-4 4M20 16l-4 4M4 4l16 16"/>`,
+    slide: `<rect x="3" y="5" width="8" height="14" rx="1"/><rect x="13" y="5" width="8" height="14" rx="1"/><path d="M16 12h4m-2-2 2 2-2 2"/>`,
+    partition: `<path d="M4 20V4M20 20V4M4 4h16M4 20h16M4 9h16M4 14h16"/>`,
+    pergola: `<path d="M3 8h18M5 8v12M9 8v12M15 8v12M19 8v12M3 4l18 4M3 8l18-4"/>`,
+    shed: `<path d="M2 10 12 4l10 6M4 10v10h16V10M9 20v-6h6v6"/>`,
+    house: `<path d="M3 11 12 4l9 7M5 10v10h14V10M9 20v-6h6v6"/>`,
+    building: `<rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 7h1M14 7h1M9 11h1M14 11h1M9 15h1M14 15h1M10 21v-4h4v4"/>`,
+    quality: `<path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-4Z"/><path d="m9 12 2 2 4-4"/>`,
+    custom: `<path d="M4 21v-4l11-11 4 4L8 21H4Z"/><path d="M14 5l4 4"/>`,
+    team: `<circle cx="9" cy="8" r="3"/><path d="M2 20c0-3.3 3-6 7-6s7 2.7 7 6"/><circle cx="17" cy="8" r="2.4"/><path d="M17 12.5c2.3.3 4 2.2 4 4.5"/>`,
+    precision: `<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.4"/><path d="M12 3v3M12 18v3M3 12h3M18 12h3"/>`,
+    price: `<circle cx="12" cy="12" r="9"/><path d="M9 15s.7 1.4 3 1.4 3-1 3-2.2c0-3-6-1.4-6-4.4 0-1.2 1.2-2.2 3-2.2s3 1.2 3 1.2M12 6v1.4M12 16.6V18"/>`,
+    equip: `<path d="M14.7 2.7 21.3 9.3 12 18.6 5.4 12 14.7 2.7Z"/><path d="m2 22 3.4-3.4"/>`,
+    delivery: `<rect x="2" y="7" width="13" height="10" rx="1"/><path d="M15 10h4l3 3v4h-7z"/><circle cx="7" cy="19" r="1.6"/><circle cx="18" cy="19" r="1.6"/>`,
+    finish: `<path d="M3 3s5 0 8 3-3 8-3 8-5 0-8-3 3-8 3-8Z"/><path d="M11 13 21 3"/>`,
+    happy: `<circle cx="12" cy="12" r="9"/><path d="M8 14s1.5 2 4 2 4-2 4-2M9 9h.01M15 9h.01"/>`,
+    call: `<path d="M4 5c0 8.3 6.7 15 15 15l3-3.6a1.6 1.6 0 0 0-.6-2.5l-4-1.8a1.6 1.6 0 0 0-1.8.4l-1.3 1.4a12 12 0 0 1-5.7-5.7l1.4-1.3a1.6 1.6 0 0 0 .4-1.8l-1.8-4A1.6 1.6 0 0 0 7.6 2L4 5Z"/>`,
+    check: `<path d="M20 6 9 17l-5-5"/>`,
+    arrow: `<path d="M5 12h14m-6-6 6 6-6 6"/>`,
+    zoom: `<circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3M11 8v6M8 11h6"/>`,
+  };
+  const svgIcon = (name, sw = "1.7") =>
+    `<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="${sw}" stroke-linecap="round" stroke-linejoin="round">${ICON[name] || ""}</svg>`;
+
+  /* Decorative blueprint-style gallery graphic (reusable) */
+  function galleryArt(iconName, seed) {
+    return `
+    <svg viewBox="0 0 400 300" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="g${seed}" x1="0" y1="0" x2="1" y2="1">
+          <stop offset="0" stop-color="#1B1F24"/><stop offset="1" stop-color="#0E1013"/>
+        </linearGradient>
+        <pattern id="grid${seed}" width="26" height="26" patternUnits="userSpaceOnUse">
+          <path d="M26 0H0V26" fill="none" stroke="#262b31" stroke-width="1"/>
+        </pattern>
+      </defs>
+      <rect width="400" height="300" fill="url(#g${seed})"/>
+      <rect width="400" height="300" fill="url(#grid${seed})"/>
+      <circle cx="200" cy="150" r="86" fill="none" stroke="#FF6A1A" stroke-opacity=".18" stroke-width="1.5"/>
+      <g transform="translate(140,90)" stroke="#FF6A1A" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.95">
+        <g transform="scale(5)">${ICON[iconName]}</g>
+      </g>
+    </svg>`;
+  }
+
+  /* ---------------- Content data ---------------- */
+  const services = [
+    { icon:"weld", title:"Steel Fabrication", desc:"Custom MS &amp; SS structures cut, welded and finished to your drawing or site measurement." },
+    { icon:"window", title:"Aluminium Windows", desc:"Slim-frame aluminium windows built for durability, ventilation and a clean modern look." },
+    { icon:"gate", title:"Main Gates", desc:"Statement entrance gates in steel or aluminium, designed to match your building's façade." },
+    { icon:"railing", title:"Balcony Railings", desc:"Safe, elegant balcony railings in SS, MS or glass — built to local safety norms." },
+    { icon:"stairs", title:"Stair Railings", desc:"Indoor and outdoor staircase railings finished for a smooth, secure grip and clean lines." },
+    { icon:"grill", title:"Safety Grills", desc:"Window &amp; door safety grills that protect without blocking light or ventilation." },
+    { icon:"glass", title:"Toughened Glass", desc:"Impact-resistant toughened glass for railings, partitions, doors and gate panels." },
+    { icon:"slide", title:"Sliding Doors", desc:"Smooth-glide aluminium sliding doors for balconies, kitchens and shopfronts." },
+    { icon:"partition", title:"Office Partitions", desc:"Glass &amp; aluminium partition systems that divide space without losing daylight." },
+    { icon:"shed", title:"Car Parking Sheds", desc:"Weatherproof steel parking sheds and canopies for villas, offices and apartment blocks." },
+    { icon:"pergola", title:"Pergolas", desc:"Outdoor steel &amp; aluminium pergolas for gardens, terraces and café seating areas." },
+    { icon:"house", title:"Residential Projects", desc:"End-to-end fabrication packages for villas, bungalows and apartment interiors." },
+    { icon:"building", title:"Commercial Projects", desc:"Large-scale fabrication for offices, factories, showrooms and retail spaces." },
+  ];
+
+  const whyUs = [
+    { icon:"quality", title:"Premium Materials", desc:"Certified MS, SS, aluminium and toughened glass — no compromise on grade." },
+    { icon:"custom", title:"Custom Design", desc:"Every piece is drawn and cut to your exact space, not a stock size." },
+    { icon:"team", title:"Experienced Team", desc:"In-house designers, welders and fitters working as one crew on your job." },
+    { icon:"precision", title:"Precision Installation", desc:"Site-fitted with laser-level accuracy for a tight, lasting finish." },
+    { icon:"price", title:"Affordable Pricing", desc:"Transparent, itemised quotes with no hidden costs after approval." },
+    { icon:"equip", title:"Modern Equipment", desc:"CNC cutting and jig-welding for consistent, repeatable quality." },
+    { icon:"delivery", title:"Timely Delivery", desc:"A fixed installation date confirmed before work begins on your project." },
+    { icon:"finish", title:"Long-lasting Finish", desc:"Anti-rust priming and powder coating built to handle Mumbai's weather." },
+  ];
+
+  const process = [
+    { title:"Consultation", desc:"Understand your need" },
+    { title:"Site Visit", desc:"Free measurement" },
+    { title:"Design", desc:"Scale drawing shared" },
+    { title:"Quotation", desc:"Itemised, transparent" },
+    { title:"Manufacturing", desc:"Cut &amp; welded in-house" },
+    { title:"Installation", desc:"Fitted by our crew" },
+    { title:"Final Inspection", desc:"Sign-off with you" },
+  ];
+
+  const products = [
+    { icon:"railing", title:"SS Railings" },
+    { icon:"gate", title:"MS Gates" },
+    { icon:"window", title:"Aluminium Windows" },
+    { icon:"glass", title:"Toughened Glass" },
+    { icon:"slide", title:"Sliding Doors" },
+    { icon:"stairs", title:"Stair Railings" },
+    { icon:"pergola", title:"Pergolas" },
+    { icon:"grill", title:"Safety Grills" },
+  ];
+
+  const gallery = [
+    { icon:"gate", cat:"gates", tag:"Main Gate", title:"Modern MS Main Gate", tall:true },
+    { icon:"railing", cat:"railings", tag:"SS Railing", title:"Stainless Steel Balcony Railing" },
+    { icon:"glass", cat:"railings", tag:"Glass Railing", title:"Frameless Glass Balcony Railing" },
+    { icon:"stairs", cat:"railings", tag:"Staircase", title:"Indoor Staircase Railing", tall:true },
+    { icon:"pergola", cat:"outdoor", tag:"Pergola", title:"Garden Steel Pergola" },
+    { icon:"window", cat:"glass", tag:"Windows", title:"Aluminium Sliding Windows" },
+    { icon:"railing", cat:"railings", tag:"Balcony", title:"MS Balcony Railing", tall:true },
+    { icon:"partition", cat:"glass", tag:"Partition", title:"Office Glass Partition" },
+    { icon:"grill", cat:"gates", tag:"Safety Grill", title:"Window Safety Grill" },
+    { icon:"shed", cat:"outdoor", tag:"Parking Shed", title:"Villa Car Parking Shed", tall:true },
+  ];
+
+  const testimonials = [
+    { name:"Rohit Mehta", role:"Homeowner, Malad", text:"They measured, quoted and installed our main gate within ten days. The finish looks far more premium than what we expected for the price.", initials:"RM" },
+    { name:"Ayesha Khan", role:"Interior Designer", text:"I've used Zoom Steel Aluminium on three client apartments now — glass railings every time. Clean welds, no site mess, always on schedule.", initials:"AK" },
+    { name:"Sanjay Builders", role:"Contractor, Kandivali", text:"Handled the parking shed and grills for our entire building project. Good communication throughout and the pricing stayed exactly as quoted.", initials:"SB" },
+    { name:"Priya Nair", role:"Homeowner, Goregaon", text:"Our stair railing needed a tricky curved section. The team got the design right on the second visit and installed it perfectly.", initials:"PN" },
+    { name:"Imran Sheikh", role:"Office Owner", text:"Glass office partitions were fitted over a weekend with zero disruption to work on Monday. Would recommend for any commercial fit-out.", initials:"IS" },
+  ];
+
+  const faqs = [
+    { q:"Do you provide custom fabrication?", a:"Yes. Every gate, railing and window is designed and cut to your exact measurements, layout and style preference — nothing is off-the-shelf." },
+    { q:"Do you offer site visits?", a:"Yes. We carry out a free on-site measurement and consultation before quoting, so the design and pricing are accurate from the start." },
+    { q:"Which areas do you serve?", a:"We serve homeowners, builders and businesses across the Mumbai Metropolitan Region, with our workshop based in Malad." },
+    { q:"How long does installation take?", a:"Most residential gates and railings are manufactured and installed within 7–12 days of order confirmation, depending on design complexity." },
+    { q:"What materials do you use?", a:"We work with mild steel (MS), stainless steel (SS), structural aluminium sections and toughened safety glass, sourced from certified suppliers." },
+    { q:"Do you provide commercial work?", a:"Yes. We handle office partitions, commercial facades, factory grills and large-scale parking sheds for builders and businesses." },
+    { q:"Is glass included?", a:"Yes, toughened glass is available for railings, partitions, sliding doors and gate panels as part of the fabrication package." },
+  ];
+
+  /* ---------------- Render: Services ---------------- */
+  const servicesGrid = document.getElementById("servicesGrid");
+  servicesGrid.innerHTML = services.map((s,i) => `
+    <article class="service-card reveal" style="--i:${i}">
+      <div class="service-icon">${svgIcon(s.icon)}</div>
+      <h3>${s.title}</h3>
+      <p>${s.desc}</p>
+      <a href="#contact" class="service-more">Learn More ${svgIcon("arrow","2")}</a>
+    </article>`).join("");
+
+  /* ---------------- Render: Why Us ---------------- */
+  const whyGrid = document.getElementById("whyGrid");
+  whyGrid.innerHTML = whyUs.map((w,i) => `
+    <div class="feature-card reveal" style="--i:${i}">
+      ${svgIcon(w.icon,"1.6")}
+      <h4>${w.title}</h4>
+      <p>${w.desc}</p>
+    </div>`).join("");
+
+  /* ---------------- Render: Process ---------------- */
+  const processTrack = document.getElementById("processTrack");
+  processTrack.innerHTML = process.map((p,i) => `
+    <div class="process-step reveal" style="--i:${i}">
+      <div class="process-num">${i+1}</div>
+      <h4>${p.title}</h4>
+      <p>${p.desc}</p>
+    </div>`).join("");
+
+  /* ---------------- Render: Products ---------------- */
+  const productsGrid = document.getElementById("productsGrid");
+  productsGrid.innerHTML = products.map((p,i) => `
+    <div class="product-card reveal" style="--i:${i}">
+      ${svgIcon(p.icon,"1.5")}
+      <h4>${p.title}</h4>
+    </div>`).join("");
+
+  /* ---------------- Render: Gallery ---------------- */
+  const masonryGrid = document.getElementById("masonryGrid");
+  masonryGrid.innerHTML = gallery.map((g,i) => `
+    <div class="g-item reveal" style="--i:${i}" data-cat="${g.cat}" data-title="${g.title}" data-tag="${g.tag}" data-icon="${g.icon}">
+      <div class="g-visual">
+        ${galleryArt(g.icon, i)}
+        <div class="g-zoom">${svgIcon("zoom","2")}</div>
+        <div class="g-caption"><span>${g.tag}</span><h4>${g.title}</h4></div>
+      </div>
+    </div>`).join("");
+
+  /* Gallery filtering */
+  const filterBtns = document.querySelectorAll(".filter-btn");
+  filterBtns.forEach(btn => btn.addEventListener("click", () => {
+    filterBtns.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+    const f = btn.dataset.filter;
+    document.querySelectorAll(".g-item").forEach(item => {
+      const show = f === "all" || item.dataset.cat === f;
+      item.style.display = show ? "" : "none";
+    });
+  }));
+
+  /* Lightbox */
+  const lightbox = document.getElementById("lightbox");
+  const lightboxVisual = document.getElementById("lightboxVisual");
+  const lightboxTitle = document.getElementById("lightboxTitle");
+  const lightboxCat = document.getElementById("lightboxCat");
+  document.addEventListener("click", (e) => {
+    const item = e.target.closest(".g-item");
+    if (item) {
+      lightboxVisual.innerHTML = galleryArt(item.dataset.icon, "lb");
+      lightboxTitle.textContent = item.dataset.title;
+      lightboxCat.textContent = item.dataset.tag;
+      lightbox.classList.add("open");
+    }
+    if (e.target.closest("#lightboxClose") || e.target === lightbox) {
+      lightbox.classList.remove("open");
+    }
+  });
+
+  /* ---------------- Render: Testimonials ---------------- */
+  const testiSlides = document.getElementById("testiSlides");
+  const testiDots = document.getElementById("testiDots");
+  testiSlides.innerHTML = testimonials.map(t => `
+    <div class="testi-slide">
+      <div class="testi-card">
+        <div class="testi-stars">${'★'.repeat(5).split('').map(()=>`<svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 3.1 6.3 6.9 1-5 4.9 1.2 6.8L12 17.8 5.8 21l1.2-6.8-5-4.9 6.9-1L12 2Z"/></svg>`).join('')}</div>
+        <p>&ldquo;${t.text}&rdquo;</p>
+        <div class="testi-person">
+          <div class="testi-avatar">${t.initials}</div>
+          <div><strong>${t.name}</strong><span>${t.role}</span></div>
+        </div>
+      </div>
+    </div>`).join("");
+  testiDots.innerHTML = testimonials.map((_,i) => `<button aria-label="Go to testimonial ${i+1}" class="${i===0?'active':''}"></button>`).join("");
+
+  let testiIndex = 0;
+  const dotBtns = () => testiDots.querySelectorAll("button");
+  function goToTesti(i) {
+    testiIndex = (i + testimonials.length) % testimonials.length;
+    testiSlides.style.transform = `translateX(-${testiIndex * 100}%)`;
+    dotBtns().forEach((d, idx) => d.classList.toggle("active", idx === testiIndex));
+  }
+  document.getElementById("testiPrev").addEventListener("click", () => goToTesti(testiIndex - 1));
+  document.getElementById("testiNext").addEventListener("click", () => goToTesti(testiIndex + 1));
+  dotBtns().forEach((d, idx) => d.addEventListener("click", () => goToTesti(idx)));
+  let testiTimer = setInterval(() => goToTesti(testiIndex + 1), 6000);
+  document.querySelector(".testi-wrap").addEventListener("mouseenter", () => clearInterval(testiTimer));
+  document.querySelector(".testi-wrap").addEventListener("mouseleave", () => testiTimer = setInterval(() => goToTesti(testiIndex + 1), 6000));
+
+  /* ---------------- Render: FAQ ---------------- */
+  const faqList = document.getElementById("faqList");
+  faqList.innerHTML = faqs.map((f,i) => `
+    <div class="faq-item ${i===0?'open':''}">
+      <button class="faq-q" aria-expanded="${i===0}">
+        <h4>${f.q}</h4><span class="plus"></span>
+      </button>
+      <div class="faq-a"><p>${f.a}</p></div>
+    </div>`).join("");
+
+  document.querySelectorAll(".faq-q").forEach(btn => {
+    btn.addEventListener("click", () => {
+      const item = btn.closest(".faq-item");
+      const answer = item.querySelector(".faq-a");
+      const isOpen = item.classList.contains("open");
+      document.querySelectorAll(".faq-item.open").forEach(openItem => {
+        if (openItem !== item) {
+          openItem.classList.remove("open");
+          openItem.querySelector(".faq-a").style.maxHeight = null;
+          openItem.querySelector(".faq-q").setAttribute("aria-expanded","false");
+        }
+      });
+      item.classList.toggle("open", !isOpen);
+      btn.setAttribute("aria-expanded", String(!isOpen));
+      answer.style.maxHeight = !isOpen ? answer.scrollHeight + "px" : null;
+    });
+  });
+  // open first FAQ answer height on load
+  window.addEventListener("load", () => {
+    const first = document.querySelector(".faq-item.open .faq-a");
+    if (first) first.style.maxHeight = first.scrollHeight + "px";
+  });
+
+  /* ---------------- Header scroll + progress + active link ---------------- */
+  const header = document.getElementById("siteHeader");
+  const progressBar = document.getElementById("progressBar");
+  const fabTop = document.getElementById("fabTop");
+  const navLinks = document.querySelectorAll(".main-nav a");
+  const sections = [...document.querySelectorAll("main section[id]")];
+
+  function onScroll() {
+    const y = window.scrollY;
+    header.classList.toggle("scrolled", y > 30);
+    fabTop.classList.toggle("show", y > 500);
+
+    const docH = document.documentElement.scrollHeight - window.innerHeight;
+    progressBar.style.width = docH > 0 ? `${(y / docH) * 100}%` : "0%";
+
+    let current = sections[0]?.id;
+    for (const sec of sections) {
+      if (y >= sec.offsetTop - 140) current = sec.id;
+    }
+    navLinks.forEach(a => a.classList.toggle("active", a.getAttribute("href") === `#${current}`));
+  }
+  document.addEventListener("scroll", onScroll, { passive:true });
+  onScroll();
+
+  fabTop.addEventListener("click", () => window.scrollTo({ top:0, behavior:"smooth" }));
+
+  /* ---------------- Mobile nav ---------------- */
+  const navToggle = document.getElementById("navToggle");
+  const mobileNav = document.getElementById("mobileNav");
+  const navScrim = document.getElementById("navScrim");
+  function closeNav() {
+    navToggle.classList.remove("active");
+    mobileNav.classList.remove("open");
+    navScrim.classList.remove("open");
+    navToggle.setAttribute("aria-expanded","false");
+  }
+  navToggle.addEventListener("click", () => {
+    const open = mobileNav.classList.toggle("open");
+    navToggle.classList.toggle("active", open);
+    navScrim.classList.toggle("open", open);
+    navToggle.setAttribute("aria-expanded", String(open));
+  });
+  navScrim.addEventListener("click", closeNav);
+  mobileNav.querySelectorAll("a").forEach(a => a.addEventListener("click", closeNav));
+
+  /* ---------------- Scroll reveal ---------------- */
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add("in-view");
+        io.unobserve(entry.target);
+      }
+    });
+  }, { threshold:.15, rootMargin:"0px 0px -60px 0px" });
+  document.querySelectorAll(".reveal, .section-head").forEach(el => io.observe(el));
+
+  /* ---------------- Animated counters ---------------- */
+  const counters = document.querySelectorAll("[data-count]");
+  const counterIO = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (!entry.isIntersecting) return;
+      const el = entry.target;
+      const target = parseInt(el.dataset.count, 10);
+      const duration = 1400;
+      const start = performance.now();
+      function tick(now) {
+        const p = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.round(eased * target);
+        if (p < 1) requestAnimationFrame(tick);
+      }
+      requestAnimationFrame(tick);
+      counterIO.unobserve(el);
+    });
+  }, { threshold:.6 });
+  counters.forEach(c => counterIO.observe(c));
+
+  /* ---------------- Ripple on buttons ---------------- */
+  document.querySelectorAll(".btn").forEach(btn => {
+    btn.addEventListener("click", function (e) {
+      const rect = this.getBoundingClientRect();
+      const ripple = document.createElement("span");
+      ripple.className = "ripple";
+      ripple.style.left = `${e.clientX - rect.left}px`;
+      ripple.style.top = `${e.clientY - rect.top}px`;
+      this.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 650);
+    });
+  });
+
+  /* ---------------- Custom cursor (desktop only) ---------------- */
+  if (matchMedia("(hover:hover) and (pointer:fine)").matches) {
+    const dot = document.getElementById("cursorDot");
+    const ring = document.getElementById("cursorRing");
+    let rx = 0, ry = 0, mx = 0, my = 0;
+    document.addEventListener("mousemove", (e) => {
+      mx = e.clientX; my = e.clientY;
+      dot.style.left = `${mx}px`; dot.style.top = `${my}px`;
+    });
+    (function loop() {
+      rx += (mx - rx) * .18; ry += (my - ry) * .18;
+      ring.style.left = `${rx}px`; ring.style.top = `${ry}px`;
+      requestAnimationFrame(loop);
+    })();
+    document.querySelectorAll("[data-cursor-hover], a, button, .g-item").forEach(el => {
+      el.addEventListener("mouseenter", () => ring.classList.add("hover"));
+      el.addEventListener("mouseleave", () => ring.classList.remove("hover"));
+    });
+  }
+
+  /* ---------------- Hero spark particles ---------------- */
+  const canvas = document.getElementById("sparkCanvas");
+  if (canvas) {
+    const ctx = canvas.getContext("2d");
+    let particles = [];
+    function resize() {
+      canvas.width = canvas.offsetWidth;
+      canvas.height = canvas.offsetHeight;
+    }
+    function spawn() {
+      particles.push({
+        x: canvas.width * (0.55 + Math.random() * 0.4),
+        y: canvas.height * (0.3 + Math.random() * 0.5),
+        vx: (Math.random() - 0.6) * 2.4,
+        vy: (Math.random() - 1.4) * 2.2,
+        life: 1,
+        size: Math.random() * 2 + 0.6,
+      });
+    }
+    function loop() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      if (Math.random() < 0.55) spawn();
+      particles.forEach(p => {
+        p.x += p.vx; p.y += p.vy; p.vy += 0.05; p.life -= 0.018;
+        ctx.globalAlpha = Math.max(p.life, 0);
+        ctx.fillStyle = p.life > 0.5 ? "#FFD9A0" : "#FF6A1A";
+        ctx.fillRect(p.x, p.y, p.size, p.size);
+      });
+      particles = particles.filter(p => p.life > 0);
+      ctx.globalAlpha = 1;
+      requestAnimationFrame(loop);
+    }
+    resize();
+    window.addEventListener("resize", resize);
+    if (!matchMedia("(prefers-reduced-motion: reduce)").matches) requestAnimationFrame(loop);
+  }
+
+  /* ---------------- Contact form (demo submit) ---------------- */
+  const form = document.getElementById("contactForm");
+  const success = document.getElementById("formSuccess");
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    if (!form.name.value || !form.phone.value) {
+      form.name.focus();
+      return;
+    }
+    success.classList.add("show");
+    form.reset();
+    success.scrollIntoView({ behavior:"smooth", block:"center" });
+  });
+
+  /* ---------------- Footer year ---------------- */
+  document.getElementById("year").textContent = new Date().getFullYear();
+
+  /* ---------------- Page loader ---------------- */
+  window.addEventListener("load", () => {
+    document.getElementById("pageLoader").classList.add("hidden");
+  });
+  // Fallback in case load event already fired
+  setTimeout(() => document.getElementById("pageLoader")?.classList.add("hidden"), 1800);
+
+})();
+</script>
+</body>
+</html>
