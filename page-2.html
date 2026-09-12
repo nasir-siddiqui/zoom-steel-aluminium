@@ -1319,17 +1319,26 @@ const gallery = [
   /* ---------------- Render: Gallery ---------------- */
   const masonryGrid = document.getElementById("masonryGrid");
   masonryGrid.innerHTML = gallery.map((g,i) => `
-    <div class="g-item reveal" style="--i:${i}" data-cat="${g.cat}" data-title="${g.title}" data-tag="${g.tag}" data-icon="${g.icon}">
-      <div class="g-visual">
-        <img 
-  src="${g.image}" 
-  alt="${g.title}" 
-  loading="lazy"
->
-        <div class="g-zoom">${svgIcon("zoom","2")}</div>
-        <div class="g-caption"><span>${g.tag}</span><h4>${g.title}</h4></div>
+  <div class="g-item reveal"
+       style="--i:${i}"
+       data-cat="${g.cat}"
+       data-title="${g.title}"
+       data-tag="${g.tag}"
+       data-image="${g.image}">
+    <div class="g-visual">
+      <img
+        src="${g.image}"
+        alt="${g.title}"
+        loading="lazy"
+      >
+      <div class="g-zoom">${svgIcon("zoom","2")}</div>
+      <div class="g-caption">
+        <span>${g.tag}</span>
+        <h4>${g.title}</h4>
       </div>
-    </div>`).join("");
+    </div>
+  </div>
+`).join("");
 
   /* Gallery filtering */
   const filterBtns = document.querySelectorAll(".filter-btn");
