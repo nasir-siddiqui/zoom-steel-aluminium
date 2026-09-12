@@ -81,8 +81,3 @@ Includes:
 - Welding spark animation
 - Scroll progress indicator
 - Back-to-top button
-
-## 💻 Run Locally
-
-```bash
-python -m http.server 8000
