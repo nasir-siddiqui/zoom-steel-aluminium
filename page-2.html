@@ -1351,8 +1351,13 @@ const gallery = [
   document.addEventListener("click", (e) => {
     const item = e.target.closest(".g-item");
     if (item) {
-      lightboxVisual.innerHTML = galleryArt(item.dataset.icon, "lb");
-      lightboxTitle.textContent = item.dataset.title;
+lightboxVisual.innerHTML = `
+  <img 
+    src="${item.dataset.image}" 
+    alt="${item.dataset.title}"
+    style="width:100%; height:auto; max-height:70vh; object-fit:contain;"
+  >
+`;      lightboxTitle.textContent = item.dataset.title;
       lightboxCat.textContent = item.dataset.tag;
       lightbox.classList.add("open");
     }
