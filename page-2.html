@@ -375,8 +375,17 @@ body::before{
   border:1px solid var(--line); cursor:pointer;
 }
 .g-item .g-visual{ position:relative; overflow:hidden; }
-.g-item svg{ width:100%; height:auto; display:block; transition:transform .6s var(--ease); background:var(--panel); }
-.g-item:hover svg{ transform:scale(1.08); }
+.g-item img{
+  width:100%;
+  height:auto;
+  display:block;
+  transition:transform .6s var(--ease);
+  background:var(--panel);
+}
+
+.g-item:hover img{
+  transform:scale(1.08);
+}
 .g-caption{
   position:absolute; inset:auto 0 0 0; padding:18px; z-index:2;
   background:linear-gradient(0deg, rgba(8,9,11,.92), transparent);
@@ -388,7 +397,7 @@ body::before{
 .g-zoom{ position:absolute; top:14px; right:14px; width:36px; height:36px; border-radius:50%; background:rgba(10,12,14,.6); border:1px solid var(--line); display:flex; align-items:center; justify-content:center; color:var(--white); opacity:0; transition:.3s; z-index:2; }
 .g-item:hover .g-zoom{ opacity:1; }
 .g-zoom svg{ width:16px; height:16px; }
-
+   
 /* Lightbox */
 .lightbox{ position:fixed; inset:0; z-index:1100; background:rgba(6,7,8,.94); display:flex; align-items:center; justify-content:center; padding:40px; opacity:0; pointer-events:none; transition:.35s; }
 .lightbox.open{ opacity:1; pointer-events:auto; }
@@ -1214,45 +1223,43 @@ const gallery = [
     image: "Modern MS Main Gate.png",
     cat: "gates",
     tag: "Main Gate",
-    title: "Modern MS Main Gate",
-    tall: true
+    title: "Modern MS Main Gate"
   },
   {
     image: "MS Balcony Railing.png",
     cat: "railings",
-    tag: "SS Railing",
-    title: "Stainless Steel Balcony Railing"
+    tag: "Balcony Railing",
+    title: "MS Balcony Railing"
   },
   {
     image: "Garden Steel Pergola.png",
-    cat: "railings",
-    tag: "Glass Railing",
-    title: "Frameless Glass Balcony Railing"
-  },
-  {
-    image: "Glass Railing Frameless Glass Balcony Railing.png",
-    cat: "railings",
-    tag: "Staircase",
-    title: "Indoor Staircase Railing",
-    tall: true
-  },
-  {
-    image: "Indoor Staircase Railing.png",
     cat: "outdoor",
     tag: "Pergola",
     title: "Garden Steel Pergola"
   },
   {
+    image: "Glass Railing Frameless Glass Balcony Railing.png",
+    cat: "railings",
+    tag: "Glass Railing",
+    title: "Frameless Glass Balcony Railing"
+  },
+  {
+    image: "Indoor Staircase Railing.png",
+    cat: "railings",
+    tag: "Staircase",
+    title: "Indoor Staircase Railing"
+  },
+  {
     image: "Modern Balcony with Ornamental Stainless Steel Railing.png",
-    cat: "glass",
-    tag: "Windows",
-    title: "Aluminium Sliding Windows"
+    cat: "railings",
+    tag: "Balcony",
+    title: "Stainless Steel Balcony Railing"
   },
   {
     image: "Modern Charcoal Sliding Window Interior.png",
-    cat: "railings",
-    tag: "Balcony",
-    title: "MS Balcony Railing"
+    cat: "glass",
+    tag: "Windows",
+    title: "Aluminium Sliding Windows"
   },
   {
     image: "Office Glass Partition.png",
