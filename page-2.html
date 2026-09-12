@@ -245,13 +245,33 @@ body::before{
   overflow:hidden;
 }
 .hero-bg{ position:absolute; inset:0; z-index:-2; }
-.hero-bg img{ width:100%; height:100%; object-fit:cover; filter:grayscale(35%) contrast(1.1) brightness(.55); }
-.hero-bg::after{
-  content:""; position:absolute; inset:0;
-  background:
-    linear-gradient(180deg, rgba(10,12,14,.55) 0%, rgba(10,12,14,.75) 45%, var(--black) 96%),
-    linear-gradient(90deg, var(--black) 0%, rgba(10,12,14,.55) 40%, rgba(10,12,14,.2) 100%);
+   /*  */
+.hero-bg img{
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  filter:grayscale(20%) contrast(1.05) brightness(.78);
 }
+
+.hero-bg::after{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(10,12,14,.20) 0%,
+      rgba(10,12,14,.35) 45%,
+      rgba(10,12,14,.70) 96%
+    ),
+    linear-gradient(
+      90deg,
+      rgba(10,12,14,.45) 0%,
+      rgba(10,12,14,.25) 40%,
+      rgba(10,12,14,.08) 100%
+    );
+}
+   /*  */
 .spark-canvas{ position:absolute; inset:0; z-index:-1; pointer-events:none; }
 
 .hero .container{ display:grid; grid-template-columns:1.15fr .85fr; gap:50px; align-items:end; }
