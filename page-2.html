@@ -178,51 +178,63 @@ body::before{
   background:linear-gradient(90deg,var(--accent),var(--gold));
   z-index:1000; transition:width .1s linear;
 }
+/* ---------- Header ---------- */
+.site-header{
+  position:fixed; top:0; left:0; right:0; z-index:900;
+  padding:18px 0;
+  transition:background .4s var(--ease), padding .4s var(--ease), border-color .4s var(--ease);
+  border-bottom:1px solid transparent;
+}
+.site-header.scrolled{
+  background:rgba(10,12,14,.85);
+  backdrop-filter:blur(14px) saturate(140%);
+  padding:12px 0;
+  border-bottom:1px solid var(--line-soft);
+}
+.site-header .container{ display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.brand{ display:flex; align-items:center; gap:12px; }
+.brand img{ width:46px; height:46px; border-radius:10px; object-fit:cover; border:1px solid var(--line); }
+.brand-text{ display:flex; flex-direction:column; line-height:1.15; }
+.brand-text strong{ font-family:var(--font-display); font-weight:800; color:var(--white); font-size:1.02rem; letter-spacing:.01em; }
+.brand-text span{ font-family:var(--font-label); font-size:.62rem; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); }
 
-/* ================================
-   MOBILE HEADER
-================================ */
+.main-nav{ display:flex; align-items:center; gap:30px; }
+.main-nav a{
+  font-family:var(--font-label); font-size:.84rem; font-weight:500; color:var(--silver);
+  position:relative; padding:6px 0; transition:color .3s;
+}
+.main-nav a::after{
+  content:""; position:absolute; left:0; bottom:0; width:0; height:2px;
+  background:var(--accent); transition:width .3s var(--ease);
+}
+.main-nav a:hover, .main-nav a.active{ color:var(--white); }
+.main-nav a:hover::after, .main-nav a.active::after{ width:100%; }
+
+.header-actions{ display:flex; align-items:center; gap:10px; }
+.icon-btn{
+  width:42px; height:42px; border-radius:50%; display:flex; align-items:center; justify-content:center;
+  border:1px solid var(--line); color:var(--white); transition:.3s var(--ease);
+}
+.icon-btn:hover{ border-color:var(--accent); color:var(--accent); transform:translateY(-2px); }
+.icon-btn svg{ width:18px; height:18px; }
+
+.nav-toggle{ display:none; width:42px; height:42px; border:1px solid var(--line); border-radius:10px; align-items:center; justify-content:center; flex-direction:column; gap:5px; }
+.nav-toggle span{ width:20px; height:2px; background:var(--white); transition:.3s; }
+.nav-toggle.active span:nth-child(1){ transform:translateY(7px) rotate(45deg); }
+.nav-toggle.active span:nth-child(2){ opacity:0; }
+.nav-toggle.active span:nth-child(3){ transform:translateY(-7px) rotate(-45deg); }
+
 @media (max-width: 768px) {
-
-  /* Hide company name/tagline on mobile */
   .brand-text {
     display: none;
   }
 
-  /* Hide Get Free Quote button on mobile */
   .header-actions .btn-primary {
     display: none;
   }
 
-  /* Keep logo visible */
-  .brand img {
-    width: 42px;
-    height: 42px;
-  }
-
-  /* Header spacing */
-  .site-header {
-    padding: 12px 0;
-  }
-
-  .site-header.scrolled {
-    padding: 10px 0;
-  }
-
-  /* Show hamburger menu */
   .nav-toggle {
     display: flex;
-  }
-
-  /* Keep call button + hamburger aligned */
-  .header-actions {
-    margin-left: auto;
-    gap: 8px;
-  }
-
-  .icon-btn {
-    width: 40px;
-    height: 40px;
   }
 }
 
