@@ -1321,7 +1321,11 @@ const gallery = [
   masonryGrid.innerHTML = gallery.map((g,i) => `
     <div class="g-item reveal" style="--i:${i}" data-cat="${g.cat}" data-title="${g.title}" data-tag="${g.tag}" data-icon="${g.icon}">
       <div class="g-visual">
-        ${galleryArt(g.icon, i)}
+        <img 
+  src="${g.image}" 
+  alt="${g.title}" 
+  loading="lazy"
+>
         <div class="g-zoom">${svgIcon("zoom","2")}</div>
         <div class="g-caption"><span>${g.tag}</span><h4>${g.title}</h4></div>
       </div>
